@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-wp-dark-mode-preset="0" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en-US" data-wp-dark-mode-preset="0">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -99,29 +99,6 @@ var wp_dark_mode_icons = {"HalfMoonFilled":"<svg viewBox=\"0 0 30 30\" fill=\"no
 <link rel="icon" href="/wp-content/uploads/2025/01/canopy-mark.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/2025/01/canopy-mark.png">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2025/01/canopy-mark.png">
-
-<!-- START - Open Graph and Twitter Card Tags 3.3.4 -->
- <!-- Facebook Open Graph -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Canopy">
-  <meta property="og:title" content="Solar power home page title">
-  <meta property="og:url" content="/">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="open graph plugin description on homepage">
-  <meta property="og:image" content="/wp-content/uploads/2025/01/canopy-cityscape-opengraph-plug.jpg">
-  <meta property="og:image:url" content="/wp-content/uploads/2025/01/canopy-cityscape-opengraph-plug.jpg">
- <!-- Google+ / Schema.org -->
- <!-- Twitter Cards -->
-  <meta name="twitter:title" content="Solar power home page title">
-  <meta name="twitter:url" content="/">
-  <meta name="twitter:description" content="open graph plugin description on homepage">
-  <meta name="twitter:image" content="/wp-content/uploads/2025/01/canopy-cityscape-opengraph-plug.jpg">
-  <meta name="twitter:card" content="summary_large_image">
- <!-- SEO -->
- <!-- Misc. tags -->
- <!-- is_singular -->
-<!-- END - Open Graph and Twitter Card Tags 3.3.4 -->
-	
 </head>
 
 <body class="home page-template page-template-language-picker page page-id-73 wp-custom-logo wp-embed-responsive">
@@ -148,41 +125,16 @@ var wp_dark_mode_icons = {"HalfMoonFilled":"<svg viewBox=\"0 0 30 30\" fill=\"no
 
 <div class="wp-dark-mode-floating-switch wp-dark-mode-ignore" style="left: 10px; bottom: 10px;">
 <script>
-const PIXEL3A = ["localhost", "127.0.0.1", "10.0.0.73"];
-const PIXEL3A2 = ["10.0.0.82"];
-const Local = ["canopy.local"];
-const IPHONE5S = ["10.0.0.165"];
-const IPHONE12M = ["10.0.0.130"];
+const LOCAL = ["canopy.local","canopyrising.local" ];
 const GITLAB = ["canopyrising.com"];
 const GITHUB = ["www.canopyrising.com"];
-if (PIXEL3A.includes(window.location.hostname))
-  document.write("<a href=\"wp-admin/\">🎛️<\/a> Google Pixel 3a");
-else if (PIXEL3A2.includes(window.location.hostname))
-  document.write("<a href=\"wp-admin/\">🎛️<\/a> Google Pixel 3a 2");
-else if (Local.includes(window.location.hostname))
-  document.write("<a href=\"wp-admin/\">🎛️<\/a> Local");
-else if (IPHONE5S.includes(window.location.hostname))
-  document.write("Hosted on iPhone 5s");
-else if (IPHONE12M.includes(window.location.hostname))
-  document.write("Hosted on iPhone 12m");
+if (LOCAL.includes(window.location.hostname))
+  document.write("<a href=\"wp-admin/\">⚙️<\/a> Local");
 else if (GITLAB.includes(window.location.hostname))
   document.write("Hosted on Gitlab");
 else if (GITHUB.includes(window.location.hostname))
   document.write("Hosted on Github");
 </script>
-<script>let hn = ["<!--#echo var="hostname" -->"];
-if (hn =="wf12m") {
- msg = "Hosted on Winston's iPhone 12m"
-} else if (hn =="wf5s") {
- msg = "Hosted Rob's iPhone 5s"
-}
-else {
- msg = ""
-}
-document.write(msg);</script>
-<script>let wmf = ["<!--#echo var="hostname" -->"];
-document.write(wmf);</script>
-<!--#echo var="hostname" -->
 </div>
 </div>
 
